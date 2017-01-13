@@ -24,21 +24,21 @@ class TruckingSimAPI:
 	
 	# Search functions
 	def search(self, type, query):
-		if type = "users":
+		if type == "users":
 			page = "searchUsers"
-		elif type = "companies":
+		elif type == "companies":
 			page = "searchCompanies"
 		return self.fetch(page, "q=" + query)
 	
 	# Company functions
 	def fetchCompany(self, type, query):
-		if type = "users":
+		if type == "users":
 			page = "searchUsers"
-		elif type = "ads":
+		elif type == "ads":
 			page = "companyAd"
-		elif type = "finances":
+		elif type == "finances":
 			page = "companyFinances"
-		elif type = "contracts":
+		elif type == "contracts":
 			page = "companyContracts"
 		return self.fetch(page, "company=" + query)
 	
