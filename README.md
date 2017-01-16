@@ -46,9 +46,9 @@ Type can be `contracts`, `cargo`, or `cities`.
 
 ### Calculating Distances
 
-There is one extra function, `fetchDistance()`.
+There is one extra function, `fetchDistances()`.
   ```python
-  api.fetchDistance(from, to)
+  api.fetchDistances(from, to)
   ```
 `From` and `to` are the name of cities. Wildcards are allowed (*).
 
