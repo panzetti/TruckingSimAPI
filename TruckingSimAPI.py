@@ -9,8 +9,7 @@ class TruckingSimAPI:
 		# Construct the URL
 		url = "http://truckingsim.com/api/" + page + ".php?key=" + self.key
 		if query != None:
-			equalLoc = query.find("=") + 1 # +1 to account for its own position
-			url = url + "&" + query[:equalLoc] + urllib.quote_plus(query[equalLoc]) # So the = isn't encoded aswell
+			url = url + "&" + query
 			print url
 		try:
 			request = urllib2.urlopen(url)
